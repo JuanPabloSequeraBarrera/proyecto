@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container-header-font{
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: start;
+    font-style: normal;
+}
+.container-header-sub-font{
+    font-family: "Poppins", sans-serif;
+    text-align: start;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-style: normal;
+}
+.container{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr / 400;
+    gap: 15px;
+    height: 100vh;
+}
+.container-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    .container-column-left{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        
+    }
+    .container-column-right{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        img{
+            position: absolute;
+            width: 150px;
+            top: 43%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #img-top{
+            left: 50%;
+            transform: translate(-30%, -30%);            
+        }
+    }
+}
+.container-footer{
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    border-radius: 15px;
+
+}
+.container-footer-titulo-font{
+    font-family: "Poppins", sans-serif;
+    color: rgb(211, 211, 211);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: start;
+    font-style: normal;
+}
+
+.container-footer-subtitle-font{
+    font-family: "Poppins", sans-serif;
+    color: rgb(211, 211, 211);
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 100;
+    font-style: normal;
+}
+#boton{
+    padding: 10px;
+    width: 100px;
+    text-align:center;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@media (min-width: 630px){
+    *{
+    box-sizing: border-box;
+    margin: 0px;
+    }
+    .container{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr /200;
+    gap: 15px;
+    height: 100vh;
+    }
+    .container-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    .container-column-left{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        
+    }
+    .container-column-right{
+        position: relative;
+        height: 100%;
+        img{
+            position: absolute;
+            width: 250px;
+            top: 43%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #img-top{
+            left: 70%;
+            transform: translate(-30%, -30%);            
+        }
+    }
+    }
+
+    .container-footer{
+        background-color: rgb(0, 0, 0);
+        padding: 2vw;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 0px;    
+        align-content: center;
+        border-radius: 40px;
+        gap: 2px;
+        
+    }
+    .container-footer-titulo-font{
+        font-family: "Poppins", sans-serif;
+        color: rgb(211, 211, 211);
+        font-size: 1.2em;
+        font-weight: 500;
+        text-align: start;
+        font-style: normal;
+    }
+    
+    .container-footer-subtitle-font{
+        font-family: "Poppins", sans-serif;
+        color: rgb(211, 211, 211);
+        text-align: start;
+        font-size: 1rem;
+        font-weight: 100;
+        font-style: normal;
+    }
+    #boton{
+        padding: 10px;
+        width: 100px;
+        text-align:center;
+        text-decoration: none;
+        background-color: black;
+        border-radius: 15px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        font-style: normal;
+    }
+}

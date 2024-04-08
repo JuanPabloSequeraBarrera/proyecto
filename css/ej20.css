@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background-color: rgb(232, 217, 214);
+}
+
+.grid-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    padding: 20px;
+    gap: 15px;
+        .container-top-texts{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px;
+            .container-image1{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                width: 100%;
+                height: 40%;
+                #image1{
+                    width: 30%;
+                    height: 100%;
+                }
+            }
+            .title{
+                font-family: "Poppins", sans-serif;
+                color:rgb(39, 25, 8);
+                font-size: 3em;
+                font-weight: 600;
+                text-align: left;
+                font-style: normal;
+                width: 100%;
+            }
+            .subtitle{
+                font-family: "Poppins", sans-serif;
+                color: black;
+                text-align: left;
+                font-size: 1rem;
+                font-weight: 100;
+                font-style: normal;
+            }
+            .container-bottom{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 100%;
+                #boton{
+                    padding: 10px;
+                    width: 150px;
+                    text-align:center;
+                    text-decoration: none;
+                    background-color:rgb(39, 25, 8);
+                    border-radius: 50px;
+                    color:white;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 15px;
+                    font-weight: 300;
+                    font-style: normal;
+                }
+            }
+        }
+        .container-flex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            .image4{
+                width: 100%;
+                padding: 10px;
+                #img5{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .container-bottom{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            .imagen{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                #imgaen{
+                    width: 80%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 625px){
+        .grid-principal{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr;
+                .container-top-texts{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 5px;
+                    .container-image1{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        width: 100%;
+                        height: 40%;
+                        #image1{
+                            width: 30%;
+                            height: 100%;
+                        }
+                    }
+                    .title{
+                        font-family: "Poppins", sans-serif;
+                        color:rgb(39, 25, 8);
+                        font-size: 6em;
+                        font-weight: 600;
+                        text-align: left;
+                        font-style: normal;
+                        width: 100%;
+                    }
+                    .subtitle{
+                        font-family: "Poppins", sans-serif;
+                        color: black;
+                        text-align: left;
+                        font-size: 2rem;
+                        font-weight: 100;
+                        font-style: normal;
+                    }
+                    .container-bottom{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        width: 100%;
+                        #boton{
+                            padding: 10px;
+                            width: 200px;
+                            text-align:center;
+                            text-decoration: none;
+                            background-color:rgb(39, 25, 8);
+                            border-radius: 50px;
+                            color:white;
+                            font-family: "Poppins", sans-serif;
+                            font-size: 1.5rem;
+                            font-weight: 300;
+                            font-style: normal;
+                        }
+                    }
+                }
+                .container-flex{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    grid-column: -3 / -1;
+                    grid-row: 2 / 3;
+                    width: 100%;
+                    height: 100%;
+                    .image4{
+                        width: 100%;
+                        padding: 10px;
+                        #img5{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .container-bottom{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                    .imagen{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                        #imgaen{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+    }

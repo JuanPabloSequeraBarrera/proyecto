@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#fondo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 110vh;
+}
+
+.grid-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    padding: 15px;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    .container-top-texts{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        .title{
+            font-family: "Poppins", sans-serif;
+            color: white;
+            font-size: 3em;
+            font-weight: 600;
+            text-align: left;
+            font-style: normal;
+            width: 100%;
+        }
+        .subtitle{
+            font-family: "Poppins", sans-serif;
+            color: white;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 100;
+            font-style: normal;
+        }
+        .container-bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            #boton{
+                padding: 10px;
+                width: 150px;
+                text-align:center;
+                text-decoration: none;
+                background-color:white;
+                border-radius: 50px;
+                color:black;
+                font-family: "Poppins", sans-serif;
+                font-size: 15px;
+                font-weight: 300;
+                font-style: normal;
+            }
+        }
+    }
+    .container-bottom-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,0.5fr);
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        gap: 10px;
+        .bottom-flex{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            box-shadow: white;
+            border-radius: 15px;
+            background-color:rgb(72, 70, 79);
+            padding: 10px;
+            .num{
+                padding: 10px;
+                color: white;
+                font-family: "Poppins", sans-serif;
+                font-size: 1.2rem;
+                font-weight: 300;
+                font-style: normal;
+            }
+            .bottom-subtitle{
+                color: rgb(168, 169, 180);
+                font-family: "Poppins", sans-serif;
+                text-align: left;
+                font-size: 1rem;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+@media (min-width: 625px){
+    #fondo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .grid-principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        padding: 15px;
+        gap: 15px;
+        width: 100%;
+        height: 100%;
+        .container-top-texts{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items:end;
+            gap: 10px;
+            padding: 20px;
+            .title{
+                font-family: "Poppins", sans-serif;
+                color: white;
+                font-size: 3em;
+                font-weight: 600;
+                text-align: left;
+                font-style: normal;
+                width: 100%;
+            }
+            .subtitle{
+                font-family: "Poppins", sans-serif;
+                color: white;
+                text-align: left;
+                font-size: 1rem;
+                font-weight: 100;
+                font-style: normal;
+            }
+            .container-bottom{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 100%;
+                #boton{
+                    padding: 10px;
+                    width: 150px;
+                    text-align:center;
+                    text-decoration: none;
+                    background-color:white;
+                    border-radius: 50px;
+                    color:black;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 15px;
+                    font-weight: 300;
+                    font-style: normal;
+                }
+            }
+        }
+        .container-bottom-grid{
+            display: grid;
+            grid-template-columns: repeat(3,0.5fr);
+            grid-template-rows: 1fr;
+            grid-column: span 2;
+            grid-row: span 2;
+            padding: 10px;
+            gap: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-around;
+            width: 100%;
+            .bottom-flex{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                box-shadow: white;
+                border-radius: 15px;
+                background-color:rgb(72, 70, 79);
+                height: 50%;
+                padding: 10px;
+                .num{
+                    padding: 10px;
+                    color: white;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    font-style: normal;
+                }
+                .bottom-subtitle{
+                    color: rgb(168, 169, 180);
+                    font-family: "Poppins", sans-serif;
+                    text-align: left;
+                    font-size: 1rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+
+}
